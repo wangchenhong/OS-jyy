@@ -1,0 +1,17 @@
+hello 16766 31857.581886:          1 cycles:uppp: 
+	    7efce6c7df40 _start+0x0 (/usr/lib64/ld-2.28.so)
+
+hello 16766 31857.581911:          1 cycles:uppp: 
+	    7efce6c7df40 _start+0x0 (/usr/lib64/ld-2.28.so)
+
+hello 16766 31857.581922:         53 cycles:uppp: 
+	    7efce6c7df40 _start+0x0 (/usr/lib64/ld-2.28.so)
+
+hello 16766 31857.581933:       5896 cycles:uppp: 
+	    7efce6c7df40 _start+0x0 (/usr/lib64/ld-2.28.so)
+
+hello 16766 31857.581969:     692106 cycles:uppp: 
+	ffffffffb1bbb790 [unknown] ([unknown])
+	    7efce6c7f000 _dl_start+0x2c0 (/usr/lib64/ld-2.28.so)
+	    7efce6c7df48 _dl_start_user+0x0 (/usr/lib64/ld-2.28.so)
+

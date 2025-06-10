@@ -1,0 +1,4 @@
+execve("./minimal", ["./minimal"], 0x7fffc8e22870 /* 53 vars */) = 0
+write(1, "\33[01;31mHello, OS World\33[0m\n", 28) = 28
+exit(1)                                 = ?
++++ exited with 1 +++
