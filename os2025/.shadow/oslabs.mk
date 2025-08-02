@@ -9,8 +9,8 @@ ifeq ($(NAME),)
 $(error Should make in each lab's directory)
 endif
 
-SRCS   := $(shell find . -maxdepth 1 -name "*.c")
-DEPS   := $(shell find . -maxdepth 1 -name "*.h") $(SRCS) ../testkit/testkit.h ../testkit/testkit.c
+SRCS   += $(shell find . -maxdepth 1 -name "*.c")
+DEPS   += $(shell find . -maxdepth 1 -name "*.h") $(SRCS) ../testkit/testkit.h ../testkit/testkit.c
 CFLAGS  += -O2 -std=gnu2x -ggdb -Wall -I../testkit
 LDFLAGS += 
 
@@ -27,7 +27,7 @@ lib$(NAME).so: $(DEPS)
 	$(CC) -fPIC -shared $(CFLAGS) $(SRCS) -o $@ $(LDFLAGS)
 
 clean:
-	rm -f lib$(NAME).so $(NAME)
+	rm -f lib$(NAME).so $(NAME) $(NAME).so $(NAME)_test
 
 git-trace:
 	@find ../.shadow/ -maxdepth 1 -type d -name '[a-z]*' | xargs rm -rf
