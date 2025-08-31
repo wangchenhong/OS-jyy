@@ -90,12 +90,12 @@ int main() {
         if(entry->d_type == DT_DIR && is_numeric(entry->d_name)){
             pid_t pid = atoi(entry->d_name);
             
-            pid_t ppid = read_ppid(pid);
-            char *name = read_process_name(pid);
+            // pid_t ppid = read_ppid(pid);
+            // char *name = read_process_name(pid);
 
             
 
-            printf("%s", entry->d_name);
+            printf("%s\n", entry->d_name);
         }
     }
     closedir(proc_dir);

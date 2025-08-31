@@ -11,7 +11,7 @@ endif
 
 SRCS   += $(shell find . -maxdepth 1 -name "*.c")
 DEPS   += $(shell find . -maxdepth 1 -name "*.h") $(SRCS) ../testkit/testkit.h ../testkit/testkit.c
-CFLAGS  += -O2 -std=gnu2x -ggdb -Wall -I../testkit
+CFLAGS  += -O2 -std=gnu18 -ggdb -Wall -I../testkit
 LDFLAGS += 
 
 
